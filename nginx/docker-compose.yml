@@ -9,7 +9,6 @@ services:
         volumes: 
             - "/opt/docker-volumes/nginx/config/:/etc/nginx/"
             - "/opt/docker-volumes/nginx/data/:/var/www/"
-        mem_limit: 512m
         restart: unless-stopped
         networks: 
             - "nginx_network"          
